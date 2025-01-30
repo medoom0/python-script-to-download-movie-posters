@@ -32,10 +32,6 @@ A Python script that scans a folder containing movie directories, cleans up movi
    ```sh
    python download_posters.py 
    ```
-   Example:
-   ```sh
-   python download_posters.py "D:/Movies"
-   ```
 3. Posters will be saved in each movie’s respective folder.
 
 ## Movie Name Cleaning

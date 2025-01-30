@@ -48,10 +48,3 @@ Example Cleanup:
 clean_movie_title("Interstellar_2014_1080p.x264 [DVDRip]")
 # Output: "Interstellar"
 ```
-
-## Contributing
-Feel free to submit pull requests or open issues if you find bugs or have feature suggestions!
-
-## License
-This project is licensed under the MIT License.
-

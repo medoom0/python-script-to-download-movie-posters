@@ -30,7 +30,7 @@ A Python script that scans a folder containing movie directories, cleans up movi
    ```
 2. **Run the script**:
    ```sh
-   python download_posters.py /path/to/movie/folders
+   python download_posters.py 
    ```
    Example:
    ```sh

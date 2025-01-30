@@ -4,7 +4,7 @@ import requests
 from tqdm import tqdm
 
 # Replace with your actual TMDb API Key
-TMDB_API_KEY = "e2757597236da6dca7f3dcfc613e7631"
+TMDB_API_KEY = "Replace with your actual TMDb API Key"
 
 # Base URL for poster images (w500 gives good quality)
 IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500"

@@ -1,5 +1,5 @@
 # Movie Poster Downloader
-
+![alt text](<Screenshot 2025-02-01 005432.png>)
 A Python script that scans a folder containing movie directories, cleans up movie names, and downloads high-quality posters for each movie from The Movie Database (TMDb).
 
 ## Features

@@ -1,12 +1,12 @@
-# Movie Poster Downloader
-![alt text](<Screenshot 2025-02-01 005432.png>)
-A Python script that scans a folder containing movie directories, cleans up movie names, and downloads high-quality posters for each movie from The Movie Database (TMDb).
+# Movie Poster & Overview Downloader
+
+A Python script that scans a folder containing movie directories, cleans up movie names, downloads high-quality posters, and saves movie overviews from The Movie Database (TMDb).
 
 ## Features
-- Automatically **cleans movie folder names** by removing extra text (e.g., resolutions, rip sources, release groups, actors, etc.).
-- Fetches **high-quality posters** using TMDb API.
-- Saves each poster in the corresponding movie folder.
-- Progress tracking with **tqdm**.
+- **Cleans movie folder names** by removing extra text (e.g., resolutions, rip sources, release groups, actors, etc.).
+- **Fetches high-quality posters** using the TMDb API and saves them in the corresponding movie folder.
+- **Downloads movie overviews** and saves them as `info.txt` in each movie folder.
+- **Progress tracking** with `tqdm`.
 
 ## Requirements
 - Python 3.x
@@ -15,8 +15,8 @@ A Python script that scans a folder containing movie directories, cleans up movi
 ## Installation
 1. Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/movie-poster-downloader.git
-   cd movie-poster-downloader
+   git clone https://github.com/yourusername/movie-info-downloader.git
+   cd movie-info-downloader
    ```
 2. Install required dependencies:
    ```sh
@@ -30,12 +30,13 @@ A Python script that scans a folder containing movie directories, cleans up movi
    ```
 2. **Run the script**:
    ```sh
-   python download_posters.py 
+   python movie_info_downloader.py
    ```
-3. Posters will be saved in each movie’s respective folder.
+3. Posters and overviews will be saved in each movie’s respective folder as `poster.jpg` and `info.txt`.
 
 ## Movie Name Cleaning
 This script removes unnecessary details from folder names, including:
+✅ **Dots replaced with spaces** → `The.Matrix.1999` → `The Matrix`
 ✅ **Years** → `(2004)`, `(1957)`, `-2019`, etc.
 ✅ **Resolutions & Quality Tags** → `1080p`, `720p`, `4K`, `HDR`, `WEB-DL`, `BluRay`, `DVDRip`, etc.
 ✅ **Release Groups & Torrent Tags** → `YTS`, `RARBG`, `GalaxyRG`, `anoXmous`, `PSA`, etc.
@@ -45,6 +46,7 @@ This script removes unnecessary details from folder names, including:
 
 Example Cleanup:
 ```python
-clean_movie_title("Interstellar_2014_1080p.x264 [DVDRip]")
-# Output: "Interstellar"
+clean_movie_title("The.Matrix.1999.1080p.BluRay.x264")
+# Output: "The Matrix"
 ```
+
